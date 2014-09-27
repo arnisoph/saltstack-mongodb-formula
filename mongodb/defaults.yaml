@@ -1,8 +1,27 @@
-{% load_yaml as rawmap %}
+{% load_yaml as rawmap_osfam %}
 Debian:
-  pkgs:
-    - mongodb
+  client:
+    pkgs:
+      - mongodb-clients
+  server:
+    pkgs:
+      - mongodb
+    service:
+      name: mongod
 RedHat:
-  pkgs:
-    - mongodb
+  client:
+    pkgs:
+      - python-pymongo
+  server:
+    pkgs:
+      - mongodb-server
+    service:
+      name: mongod
+{% endload %}
+
+{% load_yaml as rawmap_os %}
+Ubuntu:
+  server:
+    service:
+      name: mongodb
 {% endload %}

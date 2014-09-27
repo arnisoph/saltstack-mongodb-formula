@@ -29,14 +29,18 @@ Available states
 .. contents::
     :local:
 
-``mongodb``
-~~~~~~~~~~~
-Setup and manage mongodb
+``mongodb.client``
+~~~~~~~~~~~~~~~~~~
+Setup and manage mongodb client
+
+``mongodb.server``
+~~~~~~~~~~~~~~~~~~
+Setup and manage mongodb server
 
 Additional resources
 --------------------
 
-None
+In 2014.1 you will have to add a port to the ``mongodb_user.present`` state in ``mongodb.server``. In 2014.7 this has been fixed.
 
 Templates
 ---------
