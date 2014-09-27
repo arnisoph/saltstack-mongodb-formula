@@ -1,0 +1,8 @@
+{% load_yaml as rawmap %}
+Debian:
+  pkgs:
+    - mongodb
+RedHat:
+  pkgs:
+    - mongodb
+{% endload %}
