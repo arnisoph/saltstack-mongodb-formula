@@ -29,7 +29,7 @@ mongodb_user_{{ k }}:
       - service: mongodb_server
 {% endfor %}
 
-{% for k, v in salt['pillar.get']('mongodb:databases', {}).items() %}
+{% for k, v in salt['pillar.get']('mongodb:databases', {})|dictsort %}
 mongodb_database_{{ k }}:
   mongodb_database:
     - absent
