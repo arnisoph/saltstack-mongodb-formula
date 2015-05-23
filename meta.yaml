@@ -1,0 +1,10 @@
+name: saltstack-mongodb-formula
+source: https://github.com/bechtoldt/saltstack-mongodb-formula
+summary: SaltStack Formula to set up and configure mongoDB, a schema-free document-oriented database
+todo:
+  - add instructions how to use formhelper, add information about it in the formula-docs (dependency), show up alternative?
+  - 'table/ matrix: os/salt compatibility (dedicated file)'
+  - add list of available states
+  - add tests
+  - add mongodb repo
+  - enable auth
